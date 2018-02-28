@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <!--Start : Activity-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.justgraduationproject.android.recommenderapp.MainActivity">
+
+    <!--Start : Toolbar-->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/logo"/>
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:inputType="textCapWords"
+                    android:hint="Search"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/rounded_shape"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--End : Toolbar-->
+
+    <!--Start : Bottom Navigation Buttons-->
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:context="com.justgraduationproject.android.recommenderapp.bottom_nav_buttons">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_navigation_buttons" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--End : Bottom Navigation Buttons-->
+
+</RelativeLayout>
+
+        <!--End : Activity-->

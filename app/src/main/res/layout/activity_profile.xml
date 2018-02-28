@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.justgraduationproject.android.recommenderapp.ProfileActivity">
+
+    <!--Start : Assigning Adjusted Toolbar & Bottom Navigation Buttons-->
+
+    <include layout="@layout/activity_main"/>
+
+    <!--End : Assigning Adjusted Toolbar & Bottom Navigation Buttons-->
+
+    <!--Start : Content-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background"/>
+
+                    <ImageView
+                        android:id="@+id/ProPic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/team1"
+                        android:padding="8dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="ProfileOwner.name;"
+                        android:textSize="26sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@id/ProPic"
+                        android:textColor="@android:color/darker_gray"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:id="@+id/Line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#000000"
+                    android:layout_below="@id/ProPic">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Profile"
+                        android:drawableLeft="@drawable/ic_mood_black_24dp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="#FFFFFF"
+                        android:drawableLeft="@drawable/ic_dehaze_black_24dp"
+                        android:text="Personal Recommendations" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="#FFFFFF"
+                        android:drawableLeft="@drawable/ic_settings_black_24dp"
+                        android:text="Settings" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <!--End : Content-->
+
+</RelativeLayout>

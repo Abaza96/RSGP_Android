@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--To Be redone-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.justgraduationproject.android.recommenderapp.MessagingActivity">
+
+    <!--Start : Assigning Adjusted Toolbar & Bottom Navigation Buttons-->
+
+    <include layout="@layout/activity_main"/>
+
+    <!--End : Assigning Adjusted Toolbar & Bottom Navigation Buttons-->
+
+    <!--Start : Content-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp">
+
+        <RelativeLayout
+            android:id="@+id/Conversation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ProPic"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/team7"/>
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="Contact.Name;"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/conv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name"
+                android:padding="8dp"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:text="Whatever Said between you and Contact"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/conv"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/black"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Conversation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Conversation">
+
+            <ImageView
+                android:id="@+id/ProPic1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/team7"/>
+
+            <TextView
+                android:id="@+id/Name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="Contact.Name;"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/conv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name1"
+                android:padding="8dp"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:text="Whatever Said between you and Contact"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/conv1"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/black"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Conversation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Conversation1">
+
+            <ImageView
+                android:id="@+id/ProPic2"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/team7"/>
+
+            <TextView
+                android:id="@+id/Name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="Contact.Name;"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/conv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name2"
+                android:padding="8dp"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:text="Whatever Said between you and Contact"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/conv2"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/black"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Conversation3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Conversation2">
+
+            <ImageView
+                android:id="@+id/ProPic3"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/team7"/>
+
+            <TextView
+                android:id="@+id/Name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="Contact.Name;"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/conv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name3"
+                android:padding="8dp"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:text="Whatever Said between you and Contact"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/conv3"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/black"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <!--Start : Titles-->
+    <string name="app_name">Recommender App</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--End : Titles-->
+
+    <!--Start : Bottom Navigation Buttons Names-->
+
+    <string name="title_home">Home</string>
+    <string name="title_messaging">Messaging</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_community">Community</string>
+
+    <!--End : Bottom Navigation Buttons Names-->
+
+</resources>

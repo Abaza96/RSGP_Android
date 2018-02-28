@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.justgraduationproject.android.recommenderapp.NotificationsActivity">
+
+    <!--Start : Assigning Adjusted Toolbar & Bottom Navigation Buttons-->
+
+    <include layout="@layout/activity_main"/>
+
+    <!--End : Assigning Adjusted Toolbar & Bottom Navigation Buttons-->
+
+    <!--Start : Content-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp">
+
+        <ListView
+
+            android:id="@+id/Notis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
