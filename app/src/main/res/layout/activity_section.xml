@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.justgraduationproject.android.recommenderapp.ActivitySection">
+
+    <!--Start : Assigning Adjusted Toolbar & Bottom Navigation Buttons-->
+
+    <include layout="@layout/activity_main"/>
+
+    <!--End : Assigning Adjusted Toolbar & Bottom Navigation Buttons-->
+
+    <!--Start : Content-->
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background"/>
+
+                    <ImageView
+                        android:id="@+id/ProPic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/team1"
+                        android:padding="8dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="ProfileOwner.name;"
+                        android:textSize="26sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@id/ProPic"
+                        android:textColor="@android:color/darker_gray"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/Primaries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:text="Edit Profile"
+                            android:drawableTop="@drawable/ic_settings_black_24dp"
+                            android:background="@drawable/round_edges" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:text="Personal Recommendations"
+                            android:drawableTop="@drawable/ic_message_black_24dp"
+                            android:background="@drawable/round_edges" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@id/Primaries"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/ProfileButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Primaries"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Books"
+                            android:textSize="24sp"
+                            android:id="@+id/books3"
+                            android:onClick="ProfileNav"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Followers"
+                            android:textSize="24sp"
+                            android:id="@+id/followers3"
+                            android:onClick="ProfileNav"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Activities"
+                            android:textSize="24sp"
+                            android:id="@+id/activity3"
+                            android:onClick="ProfileNav" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/Line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000"
+                        android:layout_below="@id/ProfileButtons"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Line">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/chart"
+                                    android:layout_margin="32dp"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/productivity"
+                                    android:scaleType="fitCenter"
+                                    android:layout_margin="32dp"
+                                    android:layout_marginBottom="32dp"/>
+
+                            </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!--End : Content-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

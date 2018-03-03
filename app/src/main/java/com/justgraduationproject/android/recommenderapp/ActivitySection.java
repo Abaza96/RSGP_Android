@@ -8,13 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class CommunityActivity extends Activity {
+public class ActivitySection extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_community);
 
         //Bottom Nav Accessing
 
@@ -25,8 +25,30 @@ public class CommunityActivity extends Activity {
         //Highlighting
 
         Menu menu = navigation.getMenu();
-        MenuItem menuItem = menu.getItem(1);
+        MenuItem menuItem = menu.getItem(4);
         menuItem.setChecked(true);
+    }
+
+    //Profile Navigation
+
+    //Profile Navigation
+
+    public void ProfileNav(View v)
+    {
+        int ID = v.getId();
+
+        if(ID == R.id.activity3)
+        {
+            Intent I = new Intent(this, ActivitySection.class);
+            startActivity(I);
+        }
+
+        if(ID == R.id.followers3)
+        {
+            Intent I = new Intent(this, FollowersSection.class);
+            startActivity(I);
+        }
+
     }
 
     //Navigation Method
@@ -35,27 +57,27 @@ public class CommunityActivity extends Activity {
     {
         if (X == R.id.navigation_home)
         {
-            Intent I = new Intent(CommunityActivity.this, HomeActivity.class);
+            Intent I = new Intent(this, HomeActivity.class);
             startActivity(I);
 
         } else if (X == R.id.navigation_community)
         {
-            Intent I = new Intent(CommunityActivity.this, CommunityActivity.class);
+            Intent I = new Intent(this, CommunityActivity.class);
             startActivity(I);
         }
         else if (X == R.id.navigation_messaging)
         {
-            Intent I = new Intent(CommunityActivity.this, MessagingActivity.class);
+            Intent I = new Intent(this, MessagingActivity.class);
             startActivity(I);
         }
         else if (X == R.id.navigation_notifications)
         {
-            Intent I = new Intent(CommunityActivity.this, NotificationsActivity.class);
+            Intent I = new Intent(this, NotificationsActivity.class);
             startActivity(I);
         }
         else if (X == R.id.navigation_profile)
         {
-            Intent I = new Intent(CommunityActivity.this, ProfileActivity.class);
+            Intent I = new Intent(this, ProfileActivity.class);
             startActivity(I);
         }
 
@@ -94,3 +116,4 @@ public class CommunityActivity extends Activity {
         }
     };
 }
+

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.justgraduationproject.android.recommenderapp.BookDetails">
+
+    <!--Start : Assigning Adjusted Toolbar & Bottom Navigation Buttons-->
+
+    <include layout="@layout/activity_main"/>
+
+    <!--End : Assigning Adjusted Toolbar & Bottom Navigation Buttons-->
+
+    <!--Start : Content-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/Book"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/stephenking"
+                    android:background="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Book"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="Preview Book From Google Books"
+                        android:drawableLeft="@drawable/ic_book_black_24dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="Preview"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#000000"/>
+
+                    <TextView
+                        android:id="@+id/Descrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Overview"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="6dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Paragraph"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#000000"
+                        android:layout_marginTop="13dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="6dp"
+                            android:text="Originally published : "
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="June 3 , 2014"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="6dp"
+                            android:text="Author : "
+                            android:textColor="@color/colorPrimaryDark"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Stephan King"
+                            android:textColor="@android:color/holo_blue_dark"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="6dp"
+                            android:text="Series : "
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bill Hodges Series"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="6dp"
+                            android:text="Followed by : "
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Finders Keepers"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="6dp"
+                            android:text="Genre : "
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Crime Fiction"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="6dp"
+                            android:text="Pages Count : "
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="436"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="6dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Rate This Book "
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="6dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Reviews "
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_gravity="center"
+                            android:hint="Write your Opinion...."
+                            android:textColorHint="@color/colorPrimary"/>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:text="More Reviews....."
+                            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                            android:background="@android:color/transparent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -94,4 +94,10 @@ public class ProfileActivity extends Activity {
             return false;
         }
     };
+
+    public void ProfileFetch(View v)
+    {
+        Intent i = new Intent(this , UserProfile.class);
+        this.startActivity(i);
+    }
 }

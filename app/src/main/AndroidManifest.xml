@@ -23,7 +23,12 @@
         </activity>
         <activity android:name=".MessagingActivity" />
         <activity android:name=".CimmunityActivity" />
-        <activity android:name=".CommunityActivity"></activity>
+        <activity android:name=".CommunityActivity" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".BooksSectionActivity" />
+        <activity android:name=".FollowersSection" />
+        <activity android:name=".ActivitySection" />
+        <activity android:name=".BookDetails"></activity>
     </application>
 
 </manifest>

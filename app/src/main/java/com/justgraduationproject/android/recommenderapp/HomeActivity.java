@@ -31,7 +31,8 @@ public class HomeActivity extends Activity {
             Intent I = new Intent(HomeActivity.this, HomeActivity.class);
             startActivity(I);
 
-        } else if (X == R.id.navigation_community)
+        }
+        else if (X == R.id.navigation_community)
         {
             Intent I = new Intent(HomeActivity.this, MainActivity.class);
             startActivity(I);
