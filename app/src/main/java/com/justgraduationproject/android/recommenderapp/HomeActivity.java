@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class HomeActivity extends Activity {
 
@@ -24,6 +25,7 @@ public class HomeActivity extends Activity {
         MenuItem menuItem = menu.getItem(0);
         menuItem.setChecked(true);
     }
+
     public void Navigation(int X)
     {
         if (X == R.id.navigation_home)
@@ -87,4 +89,16 @@ public class HomeActivity extends Activity {
             return false;
         }
     };
+
+public void ProfileNav(View v)
+    {
+
+        int ID = v.getId();
+
+        if(ID == R.id.Book0 || ID == R.id.Book1 || ID == R.id.Book2 || ID == R.id.Book3 || ID == R.id.Book4)
+        {
+            startActivity(new Intent(this , BookDetails.class));
+        }
+    }
+
 }

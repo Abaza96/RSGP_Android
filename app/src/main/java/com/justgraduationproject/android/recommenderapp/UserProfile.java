@@ -48,6 +48,11 @@ public class UserProfile extends Activity {
             startActivity(I);
         }
 
+        if(ID == R.id.Book0 || ID == R.id.Book1 || ID == R.id.Book2 || ID == R.id.Book3 || ID == R.id.Book4)
+        {
+            startActivity(new Intent(this , BookDetails.class));
+        }
+
     }
 
     //Navigation Method

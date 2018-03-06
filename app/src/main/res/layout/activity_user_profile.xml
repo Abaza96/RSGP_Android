@@ -166,30 +166,36 @@
                             android:layout_height="200dp">
 
                             <ImageView
+                                android:id="@+id/Book0"
+                                android:layout_width="100dp"
+                                android:paddingLeft="10dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/stephenking"
+                                android:onClick="ProfileNav"/>
+
+                            <ImageView
+                                android:id="@+id/Book1"
                                 android:layout_width="100dp"
                                 android:paddingLeft="10dp"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/stephenking"/>
 
                             <ImageView
+                                android:id="@+id/Book2"
                                 android:layout_width="100dp"
                                 android:paddingLeft="10dp"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/stephenking"/>
 
                             <ImageView
+                                android:id="@+id/Book3"
                                 android:layout_width="100dp"
                                 android:paddingLeft="10dp"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/stephenking"/>
 
                             <ImageView
-                                android:layout_width="100dp"
-                                android:paddingLeft="10dp"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/stephenking"/>
-
-                            <ImageView
+                                android:id="@+id/Book4"
                                 android:layout_width="100dp"
                                 android:paddingLeft="10dp"
                                 android:layout_height="wrap_content"
