@@ -20,6 +20,7 @@ public class CommunityActivity extends Activity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        BottomNaviHelper.disableShiftMode(navigation);
 
 
         //Highlighting

@@ -29,38 +29,40 @@ public class NotificationsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications);
 
-        mListView = (ListView) findViewById(R.id.Notis);
+//        mListView = (ListView) findViewById(R.id.Notis);
+//
+//        Notis.add("Notification One");
+//        Notis.add("Notification Two");
+//        Notis.add("Notification Three");
+//        Notis.add("Notification Four");
+//        Notis.add("Notification Five");
+//        Notis.add("Notification Six");
+//        Notis.add("Notification Seven");
+//        Notis.add("Notification Eight");
+//        Notis.add("Notification Nine");
+//        Notis.add("Notification Ten");
+//
+///*
+//          ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Notis);
+//
+//          mListView.setAdapter(itemsAdapter);
+//
+//*/
+//
+//        for (int i = 0; i < 10 ; i++)
+//        {
+//            TextView word = new TextView(this);
+//
+//            word.setText(Notis.get(i));
+//
+//            mListView.addView(word);
+//        }
 
-        Notis.add("Notification One");
-        Notis.add("Notification Two");
-        Notis.add("Notification Three");
-        Notis.add("Notification Four");
-        Notis.add("Notification Five");
-        Notis.add("Notification Six");
-        Notis.add("Notification Seven");
-        Notis.add("Notification Eight");
-        Notis.add("Notification Nine");
-        Notis.add("Notification Ten");
-
-/*
-          ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Notis);
-
-          mListView.setAdapter(itemsAdapter);
-
-*/
-
-        for (int i = 0; i < 10 ; i++)
-        {
-            TextView word = new TextView(this);
-
-            word.setText(Notis.get(i));
-
-            mListView.addView(word);
-        }
         //Bottom Nav Accessing
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        BottomNaviHelper.disableShiftMode(navigation);
 
 
         //Highlighting

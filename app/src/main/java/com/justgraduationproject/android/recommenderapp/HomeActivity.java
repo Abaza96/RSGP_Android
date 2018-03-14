@@ -19,6 +19,7 @@ public class HomeActivity extends Activity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        BottomNaviHelper.disableShiftMode(navigation);
 
 
         Menu menu = navigation.getMenu();

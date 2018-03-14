@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
         search.setHint(Html.fromHtml("<font color = '#000000'> Search </font>"));
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        BottomNaviHelper.disableShiftMode(navigation);
 
 
         Menu menu = navigation.getMenu();

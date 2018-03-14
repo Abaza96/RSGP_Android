@@ -10,6 +10,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.RatingBar;
+import android.widget.Spinner;
 
 public class BookDetails extends Activity {
 
@@ -17,6 +20,21 @@ public class BookDetails extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_details);
+
+        //Spinner Identification
+
+        Spinner spinner = (Spinner) findViewById(R.id.spinneroni);
+
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.spinnerItems, android.R.layout.simple_spinner_item);
+
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
+
         //Bottom Nav Accessing
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
@@ -28,6 +46,17 @@ public class BookDetails extends Activity {
         Menu menu = navigation.getMenu();
         MenuItem menuItem = menu.getItem(2);
         menuItem.setChecked(true);
+        /*RATING OF USER */
+        RatingBar ratingBar = (RatingBar)findViewById(R.id.rating_user);
+//        final RatingBar ratingBar1 = (RatingBar)findViewById(R.id.rating_book);
+        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+
+            //Applying Rate to Database
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+//                ratingBar1.setRating(ratingBar1.getRating());
+            }
+        });
     }
 
     //Navigation Method
